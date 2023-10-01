@@ -51,7 +51,7 @@ function displayChart(data, name) {
 // Marker Colors: otu_ids
 // Text Values: otu_labels
 
-// Fetching the data using D3 - You've done something similar before.
+// Fetching the data using D3.
 d3.json(url).then(data => {
     createBubbleChart(data);
 });
@@ -92,7 +92,7 @@ function createBubbleChart(data) {
 
 // Fetching the data using D3
 d3.json(url).then(data => {
-    displayMetadata(data.metadata[0]);  // Display metadata for the first sample as an example
+    displayMetadata(data.metadata[0]);  
 });
 
 function displayMetadata(metadata) {
